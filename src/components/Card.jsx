@@ -30,24 +30,24 @@ function Card() {
 
   return (
     <div className="bg-[#212633] h-screen w-screen flex justify-center">
-      <div className="bg-[#303a49] h-[500px] w-[800px] mx-auto mt-[400px] rounded-xl relative shadow-[0px_0px_50px_1px_rgb(48,58,73)]">
+      <div className="bg-[#303a49] h-[300px] w-[560px] sm:h-[500px] sm:w-[800px] sm:mx-auto mt-[200px] mx-5 sm:mt-[400px] rounded-xl relative shadow-[0px_0px_50px_1px_rgb(48,58,73)]">
         <div className="h-10 w-[50%] mt-10 mx-auto text-center">
-          <h1 className="text-[#52ffa8] uppercase tracking-widest">
+          <h1 className="text-[#52ffa8] uppercase tracking-widest text-[10px] sm:text-[16px]">
             Advice {id ? `#${id}` : null}
           </h1>
         </div>
-        <div className="border-b-2 text-center p-10 h-[60%]">
-          <p className="text-5xl font-extrabold text-[#cee3e9]">
+        <div className="border-b-2 border-gray-500 text-center p-10 h-[60%] mx-10">
+          <p className="text-lg sm:text-5xl font-extrabold text-[#cee3e9]">
             {quote ? `"${quote}"` : null}
           </p>
         </div>
         <div>
-          <PauseIcon className="h-10 w-10 -mt-5 mx-auto bg-[#303a49] text-[#cee3e9]" />
+          <PauseIcon className="h-5 w-5 sm:h-10 sm:w-10 -mt-3  sm:-mt-5 mx-auto bg-[#303a49] text-[#cee3e9]" />
         </div>
         <div className="-mb-3">
           <div
             onClick={clickHandler}
-            className="absolute bottom-0 left-[45%] -mb-10 h-20 w-20 rounded-full bg-[#52ffa8] 
+            className="absolute bottom-0 left-[45%] -mb-5 sm:-mb-10 h-10 w-10 sm:h-20 sm:w-20 rounded-full bg-[#52ffa8] 
             mx-auto flex justify-center items-center cursor-pointer hover:transition-transform-bg hover:shadow-[0px_0px_50px_1px_rgb(82,255,168)] hover:animate-pulse"
           >
             <img src={diceImage} alt="" className="h-[50%] w-[50%]" />
