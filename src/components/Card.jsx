@@ -30,7 +30,7 @@ function Card() {
 
   return (
     <div className="bg-[#212633] h-screen w-screen flex justify-center">
-      <div className="bg-[#303a49] h-[300px] w-[560px] sm:h-[500px] sm:w-[800px] sm:mx-auto mt-[200px] mx-5 sm:mt-[400px] rounded-xl relative shadow-[0px_0px_50px_1px_rgb(48,58,73)]">
+      <div className="bg-[#303a49] h-[300px] w-[560px] sm:h-[500px] sm:w-[800px] sm:mx-auto mt-[200px] mx-5 sm:mt-[250px] rounded-xl relative shadow-[0px_0px_50px_1px_rgb(48,58,73)]">
         <div className="h-10 w-[50%] mt-10 mx-auto text-center">
           <h1 className="text-[#52ffa8] uppercase tracking-widest text-[10px] sm:text-[16px]">
             Advice {id ? `#${id}` : null}
